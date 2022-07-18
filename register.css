@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.body{
+    height: 1100px;
+}
+.container {
+    width: 500px;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+    
+}
+
+img {
+    width: 80px;
+    display: grid;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 30px;
+    color: blueviolet;
+}
+
+.img p {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.form {
+    height: 550px;
+    width: 350px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 50px 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+.icon {
+    position: absolute;
+    top: 25px;
+    right: 20px;
+    visibility: hidden;
+    font-size: 20px;
+}
+
+.form-control.success input {
+    border: 1px solid green;
+}
+
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control.success .icon.green {
+    visibility: visible;
+}
+
+.form-control.error .icon.red {
+    visibility: visible;
+}
+
+.form-control.success small {
+    color: green;
+    visibility: visible;
+}
+
+.form-control.error small {
+    color: red;
+    visibility: visible;
+}
+
+small {
+    position: absolute;
+    top: 65px;
+    right: 20px;
+    color: red;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+.icon.green {
+    color: green;
+
+}
+
+.icon.red {
+    color: red;
+}
+
+span {
+    background-color: #eee;
+    padding: 4px;
+}
+
+.form-control {
+    padding: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.form-control input {
+    border-radius: 50px;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    background-color: #eee;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: grid;
+    margin: 0 auto;
+    background-color: blueviolet;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    color: #fff;
+    margin-top: 15px;
+}
+
+.forgot {
+    padding: 0 20px;
+    margin-top: 15px;
+    text-align: center;
+    gap: 20px;
+}
+
+.forgot ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.forgot ul li a {
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:568px) {
+
+    body,
+    html {
+        width: auto !important;
+        overflow-x: hidden !important;
+        height: 800px;
+    }
+
+    .container {
+        width: 450px;
+        margin: 0 auto;
+    }
+
+    .form {
+        height: 550px;
+        width: 350px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    body {
+        height: 1000px;
+    }
+
+    .container {
+        width: 414px;
+
+    }
+
+    .form {
+         height: 550px;
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        height: 900px;
+    }
+
+    .container {
+        width: 375px;
+        padding: 0 15px;
+        
+
+    }
+
+    .form {
+        height: 550px;
+        width: 300px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 50px 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        margin-top: 20px;
+        margin-bottom: 100px;
+        
+    }
+}

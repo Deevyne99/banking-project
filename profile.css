@@ -1,0 +1,957 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1349px;
+    background-color: #fff;
+    height: 900px;
+    position: relative;
+}
+
+.container-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.side1 {
+    width: 674.5px;
+    height: 900px;
+    background-color: blueviolet;
+}
+
+.side1 h1 {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+}
+
+.side1 p {
+    color: gainsboro;
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    letter-spacing: 1px;
+}
+
+.side2 {
+    width: 674.5px;
+    background-color: #fff;
+    height: 900px;
+}
+
+.dashboard {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    margin: 0 auto;
+    position: absolute;
+    top: 100px;
+    left: 55px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dashboard-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.dash1 {
+    background-color: blueviolet;
+    width: 200px;
+    height: 700px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dash2 {
+    /* background-color:#eee; */
+
+    width: 800px;
+    height: 700px;
+}
+
+.dash3 {
+    /* background-color: #fff; */
+    width: 200px;
+    height: 700px;
+    margin-top: 20px;
+}
+
+.form-search {
+    margin-top: 20px;
+    position: relative;
+}
+
+.form-search input {
+    padding: 10px;
+    width: 100%;
+    border: 2px solid #ccc;
+
+}
+
+.btn {
+    position: absolute;
+    right: 10px;
+    top: 4px;
+    font-size: 26px;
+    color: #ccc;
+}
+
+.operations {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.balance {
+    width: 250px;
+    /* background-color: #fff; */
+    height: 150px;
+    padding: 20px 20px;
+
+}
+
+.balance.green {
+
+    background-color: #e0fef0;
+}
+
+.balance.red {
+    background-color: #ffe6ee;
+}
+
+.balance.blue {
+    background-color: #ffbf6e;
+}
+
+.balance.purple {
+    background-color: #b399d4;
+}
+
+.balance.yellow {
+    background-color: #ffffa7;
+}
+
+.balance.orange {
+    background-color: #b8e2f2;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 20px;
+}
+
+.table {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: grid;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+tbody {
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: blueviolet;
+    padding: 10px;
+    height: 30px;
+    color: whitesmoke;
+}
+
+td {
+    text-align: center;
+    padding: 5px;
+}
+
+.view {
+    margin-top: 50px;
+    text-decoration: none;
+    padding: 10px;
+    background-color: blueviolet;
+    margin-left: 720px;
+    color: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.dash3 ul {
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #fff;
+    border: none;
+    color: #ccc;
+}
+
+#display-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border-radius: 50px;
+    margin-top: 30px;
+    border: 1px solid #fff;
+    background-position: center;
+    background-size: cover;
+}
+
+.dash1 input[type='file'] {
+    color: transparent;
+    margin-left: 50px;
+    margin-top: 10px;
+}
+
+.dash1 label {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.dash1 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.dash1 ul li {
+    list-style: none;
+}
+
+.dash1 ul li a {
+    color: gainsboro;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+
+.icons {
+    font-size: 25px;
+    color: gainsboro;
+}
+
+span {
+    margin-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: none;
+    flex-direction: row;
+    margin-left: 163px;
+    border: none;
+}
+
+.icon {
+    background-color: blueviolet;
+    color: #fff;
+    font-size: 35px;
+}
+
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    padding: 30px 40px;
+    gap: 20px;
+}
+.image{
+    display: flex;
+    justify-content: flex-end;
+}
+.image img{
+    width: 50px;
+    border-radius: 50px;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: 900px;
+        background-color: #fff;
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 768px;
+        background-color: #eee;
+        height: 1300px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:568px) {
+    body {
+        height: 900px;
+        background-color: #eee;
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 568px;
+        background-color: #eee;
+        height: 1300px;
+        position: relative;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .side1 {
+        width: 284px;
+        height: 1000px;
+        background-color: blueviolet;
+    }
+
+    .side2 {
+        width: 284px;
+        background-color: #eee;
+        height: 900px;
+    }
+
+    .side1 p {
+        color: gainsboro;
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        letter-spacing: 1px;
+        width: 120px;
+    }
+
+    .dashboard {
+        width: 568px;
+        height: 900px;
+        background-color: white;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .dashboard-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .dash1 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        left: -170px;
+
+        transition: 0.2s linear;
+        z-index: 2;
+    }
+
+    .dash1.nav {
+        position: absolute;
+        left: 0;
+        transition: 0.2s linear;
+    }
+
+    .dash2 {
+        /* background-color:#eee; */
+        position: absolute;
+        /* left: 100px; */
+        width: 560px;
+        height: 900px;
+
+    }
+
+    .dash3 {
+        /* background-color: #fff; */
+        display: none;
+        width: 200px;
+        height: 700px;
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+
+    .form-search input {
+        padding: 12px;
+        width: 400px;
+        margin-left: 90px;
+
+        border: 2px solid #ccc;
+    }
+
+    .btn {
+        position: absolute;
+        right: 85px;
+        top: 5px;
+        font-size: 26px;
+        color: #ccc;
+    }
+
+    .operations {
+        grid-template-columns: 1fr 1fr 1fr;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 40px;
+        position: absolute;
+        left: 10px;
+    }
+
+    .balance {
+        width: 150px;
+        background-color: #fff;
+        height: 145px;
+        padding: 10px 5px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .table {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 300px;
+        position: absolute;
+        top: 400px;
+        left: 90px;
+        /* overflow-x: auto; */
+
+        height: 200px;
+    }
+
+    table {
+        height: 200px;
+        border-collapse: collapse;
+    }
+
+    table thead {
+        width: 300px;
+        background-color: blueviolet;
+        padding: 10px 0;
+        height: 30px;
+        color: whitesmoke;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px 5px;
+
+    }
+
+    .view {
+        position: absolute;
+        margin-top: 50px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: blueviolet;
+        color: whitesmoke;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        top: 590px;
+        left: -450px;
+    }
+.profile {
+    display: grid;
+    grid-template-columns: 1fr ;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    padding: 30px 20px;
+    gap: 20px;
+    width: 350px;
+    position: absolute;
+    left:50px;
+}
+.profile2{
+    top: 380px;
+}
+.image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image img {
+    width: 50px;
+    border-radius: 50px;
+}
+}
+
+@media screen and (max-width:414px) {
+
+    body {
+        height: 900px;
+        background-color: #fff;
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 414px;
+        background-color: #fff;
+        height: 1300px;
+        position: relative;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .side1 {
+        width: 207px;
+        height: 1000px;
+        background-color: blueviolet;
+    }
+
+    .side2 {
+        width: 207px;
+        background-color: #fff;
+        height: 900px;
+    }
+
+    .side1 p {
+        color: gainsboro;
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        letter-spacing: 1px;
+        width: 120px;
+    }
+
+    .dashboard {
+        width: 385px;
+        height: 900px;
+        background-color: white;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .dashboard-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .dash1 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        left: -170px;
+
+        transition: 0.2s linear;
+        z-index: 2;
+    }
+
+    .dash1.nav {
+        position: absolute;
+        left: 0;
+        transition: 0.2s linear;
+    }
+
+    .dash2 {
+        /* background-color:#eee; */
+        position: absolute;
+
+        width: 360px;
+        height: 900px;
+    }
+
+    .dash3 {
+        /* background-color: #fff; */
+        display: none;
+        width: 200px;
+        height: 700px;
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+
+    .form-search input {
+        padding: 12px;
+        width: 300px;
+        margin-left: 60px;
+        border: 1px solid #ccc;
+        z-index: 1;
+    }
+
+    .btn {
+        position: absolute;
+        right: 15px;
+        top: 4px;
+        font-size: 26px;
+        color: #ccc;
+    }
+
+    .operations {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 40px;
+        position: absolute;
+        left: 10px;
+    }
+
+    .balance {
+        width: 150px;
+        background-color: #fff;
+        height: 145px;
+        padding: 10px 5px;
+        border-radius: 10px;
+
+    }
+
+    .table {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 300px;
+        position: absolute;
+        top: 560px;
+        left: 60px;
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 200px;
+    }
+
+    table {
+        height: 200px;
+        border-collapse: collapse;
+    }
+
+    table thead {
+        width: 300px;
+        background-color: blueviolet;
+        padding: 10px 0;
+        height: 30px;
+        color: whitesmoke;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px 5px;
+
+    }
+
+    .view {
+        position: absolute;
+        margin-top: 50px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: blueviolet;
+        color: whitesmoke;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        top: 750px;
+        left: -450px;
+    }
+        .profile {
+            display: grid;
+            grid-template-columns: 1fr;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+            margin-top: 40px;
+            padding: 30px 20px;
+            gap: 20px;
+            width: 300px;
+            position: absolute;
+            left: 55px;
+        }
+    
+        .profile2 {
+            top: 380px;
+        }
+    
+        .image {
+            display: flex;
+            justify-content: flex-end;
+        }
+    
+        .image img {
+            width: 50px;
+            border-radius: 50px;
+        }
+}
+
+
+@media screen and (max-width:375px) {
+    body {
+        height: 900px;
+        background-color: #fff;
+        width: auto !important;
+        overflow-x: hidden !important;
+    }
+
+    .container {
+        width: 375px;
+        background-color: #fff;
+        height: 900px;
+        position: relative;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    .container-body {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    .side1 {
+        width: 187.5px;
+        height: 1000px;
+        background-color: blueviolet;
+    }
+
+    .side2 {
+        width: 187.5px;
+        background-color: #fff;
+        height: 900px;
+    }
+
+    .side1 p {
+        color: gainsboro;
+        position: absolute;
+        top: 55px;
+        left: 55px;
+        letter-spacing: 1px;
+        width: 120px;
+    }
+
+    .dashboard {
+        width: 355px;
+        height: 900px;
+        background-color: white;
+        display: flex;
+        margin: 0 auto;
+        position: absolute;
+        top: 100px;
+        left: 10px;
+        border: none;
+        border-radius: 0px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .dashboard-content {
+        display: flex;
+        gap: 20px;
+    }
+
+    .dash1 {
+        background-color: blueviolet;
+        width: 200px;
+        height: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        position: absolute;
+        left: -170px;
+
+        transition: 0.2s linear;
+        z-index: 2;
+    }
+
+    .dash1.nav {
+        position: absolute;
+        left: 0;
+        transition: 0.2s linear;
+    }
+
+    .dash2 {
+        /* background-color:#eee; */
+        position: absolute;
+
+        width: 360px;
+        height: 900px;
+    }
+
+    .dash3 {
+        /* background-color: #fff; */
+        display: none;
+        width: 200px;
+        height: 700px;
+        margin-top: 20px;
+        position: absolute;
+        top: 0;
+        right: -300px;
+    }
+
+    .form-search input {
+        padding: 10px;
+        width: 245px;
+        margin-left: 60px;
+    }
+
+    .btn {
+        position: absolute;
+        right: 65px;
+        top: 3px;
+        font-size: 26px;
+
+    }
+
+    .operations {
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 20px;
+        margin-left: 40px;
+        position: absolute;
+        left: 10px;
+    }
+
+    .balance {
+        width: 130px;
+        background-color: #fff;
+        height: 120px;
+        padding: 10px 5px;
+        border-radius: 10px;
+
+    }
+
+    .table {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        display: grid;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 300px;
+        position: absolute;
+        top: 480px;
+        left: 42px;
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 200px;
+    }
+
+    table {
+        height: 200px;
+        border-collapse: collapse;
+    }
+
+    table thead {
+        width: 300px;
+        background-color: blueviolet;
+        padding: 10px 0;
+        height: 30px;
+        color: whitesmoke;
+    }
+
+    td {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding: 5px 5px;
+
+    }
+
+    .view {
+        position: absolute;
+        margin-top: 50px;
+        text-decoration: none;
+        padding: 10px;
+        background-color: blueviolet;
+        color: whitesmoke;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        top: 680px;
+        left: -480px;
+    }
+.profile {
+    display: grid;
+    grid-template-columns: 1fr;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    margin-top: 40px;
+    padding: 30px 20px;
+    gap: 20px;
+    width: 280px;
+    position: absolute;
+    left: 50px;
+}
+
+.profile2 {
+    top: 380px;
+}
+
+.image {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image img {
+    width: 50px;
+    border-radius: 50px;
+}
+}

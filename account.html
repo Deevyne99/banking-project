@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="transact.css">
+    <title>Banka User || Dashboard</title>
+</head>
+
+<body>
+    <main class="container">
+        <div class="container-body">
+            <div class="side1">
+                <h1>Banka</h1>
+                <p>we make Banking easy</p>
+            </div>
+            <div class="side2"></div>
+        </div>
+        <div class="dashboard">
+            <div class="dashboard-content">
+                <div class="dash1">
+                    <button class="menu">
+                        <ion-icon class="icon" name="menu-outline"></ion-icon>
+                    </button>
+                    <div id="display-image"></div>
+
+                    <input type="file" id="image-input" accept="image/jpeg, image/png, image/jpg">
+                    <ul>
+                        <li>
+                            <ion-icon class="icons" name="home-outline"></ion-icon><span><a href="admin-dashboard.html">Home</a></span>
+                        </li>
+                        <li>
+                            <ion-icon class="icons" name="person-add-outline"></ion-icon><span><a href="create-cashier.html">Create
+                                    Cashier</a></span>
+                        </li>
+                        <li>
+                            <ion-icon class="icons" name="receipt-outline"></ion-icon><span><a href="account.html">View all Account</a></span>
+                        </li>
+                        
+                        <li>
+                            <ion-icon class="icons" name="checkmark-circle-outline"></ion-icon><span><a href="activate.html">
+                                    Activate</a></span>
+                        </li>
+                        
+                        <li>
+                            <ion-icon class="icons" name="close-circle-outline"></ion-icon><span><a href="deactivate.html">Deactivate</a></span>
+                        </li>
+                        
+                        <li>
+                            <ion-icon class="icons" name="trash-outline"></ion-icon><span><a href="delete.html">Delete</a></span>
+                        </li>
+                        <li>
+                            <ion-icon class="icons" name="person-outline"></ion-icon><span><a href="admin-profile.html">Profile</a></span>
+                        </li>
+                        <li>
+                            <ion-icon class="icons" name="log-out-outline"></ion-icon> <span><a href="">Sign
+                                    out</a></span>
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="dash2">
+                    <form class="form-search" action="">
+                        <button class="btn">
+                            <ion-icon name="search-outline"></ion-icon>
+                        </button>
+                        <input type="text">
+                    </form>
+                    <section class="table transact">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Account No.</th>
+                                    <th>First Name</th>
+                                    <th>First Name</th>
+                                    <th>Email</th>
+                                    <th>Number</th>
+                                    <th>View</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>14656453767</td>
+                                    <td>kalu</td>
+                                    <td>Divine</td>
+                                    <td>kalu@gmail.com</td>
+                                    <td>08148158802</td>
+                                    <td><a href="details-account.html">View </a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>14656453767</td>
+                                    <td>kalu</td>
+                                    <td>Divine</td>
+                                    <td>kalu@gmail.com</td>
+                                    <td>08148158802</td>
+                                    <td><a href="details-account.html">View </a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>14656453767</td>
+                                    <td>kalu</td>
+                                    <td>Divine</td>
+                                    <td>kalu@gmail.com</td>
+                                    <td>08148158802</td>
+                                    <td><a href="details-account.html">View </a></td>
+                                </tr>
+
+                                <tr>
+                                    <td>14656453767</td>
+                                    <td>kalu</td>
+                                    <td>Divine</td>
+                                    <td>kalu@gmail.com</td>
+                                    <td>08148158802</td>
+                                    <td><a href="details-account.html">View </a></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </section>
+
+                </div>
+                <div class="dash3">
+                    <ion-icon name="notifications-outline"></ion-icon><span>Notifications</span>
+                    <ul>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="upload.js"></script>
+    <script src="user.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="user-dashboard.css" />
+    <title>Banka User || Dashboard</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="container-body">
+        <div class="side1">
+          <h1>Banka</h1>
+          <p>we make Banking easy</p>
+        </div>
+        <div class="side2"></div>
+      </div>
+      <div class="dashboard">
+        <div class="dashboard-content">
+          <div class="dash1">
+            <button class="menu">
+              <ion-icon class="icon" name="menu-outline"></ion-icon>
+            </button>
+            <div id="display-image"></div>
+
+            <input
+              type="file"
+              id="image-input"
+              accept="image/jpeg, image/png, image/jpg"
+            />
+            <ul>
+              <li>
+                <ion-icon class="icons" name="home-outline"></ion-icon
+                ><span><a href="">Home</a></span>
+              </li>
+              <li></li>
+
+              <li>
+                <ion-icon class="icons" name="receipt-outline"></ion-icon
+                ><span><a href="">Transaction</a></span>
+              </li>
+              <li>
+                <ion-icon class="icons" name="person-outline"></ion-icon
+                ><span><a href="">Profile</a></span>
+              </li>
+              <li>
+                <ion-icon class="icons" name="log-out-outline"></ion-icon>
+                <span><a href="">Sign out</a></span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="dash2">
+            <div class="view-details">
+              <p>Transaction ID</p>
+              <p>Account Number</p>
+              <p>Amount</p>
+              <p>Cashier</p>
+              <p>Transaction type</p>
+              <p>Account Balance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="upload.js"></script>
+    <script src="user.js"></script>
+  </body>
+</html>

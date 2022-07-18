@@ -1,0 +1,2375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+}
+
+header {
+  padding: 0 60px;
+  height: 500px;
+  position: relative;
+}
+
+.menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.icon.close {
+  background-color: blueviolet;
+  color: #fff;
+}
+.nav-links {
+  height: 400px;
+  background-color: blueviolet;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  right: 0;
+  align-items: center;
+  display: none;
+}
+
+.nav-links ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.ul {
+  margin-bottom: 30px;
+}
+
+.nav-links ul li {
+  list-style: none;
+  justify-content: center;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+}
+
+.header-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.logo {
+  display: flex;
+  gap: 20px;
+}
+
+nav {
+  display: flex;
+}
+
+nav ul {
+  gap: 30px;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+.navigations {
+  display: flex;
+}
+
+.navigations ul {
+  display: flex;
+  gap: 30px;
+}
+
+.navigations ul li {
+  list-style: none;
+}
+
+.navigations ul li a {
+  text-decoration: none;
+}
+
+.image {
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.image img {
+  background-color: blueviolet;
+
+  border-radius: 10px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.image article .welcome {
+  font-size: 20px;
+}
+
+.image article p {
+  color: gray;
+  font-size: 15px;
+}
+
+.image article h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  width: 500px;
+}
+
+.title {
+  color: purple;
+}
+
+.reg {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.reg li {
+  list-style: none;
+}
+
+.reg li a {
+  text-decoration: none;
+  padding: 12px 60px;
+  background-color: #fff;
+  color: purple;
+  width: 100px;
+  border: 1px solid purple;
+  border-radius: 50px;
+}
+
+.reg li a:hover {
+  background-color: blueviolet;
+  color: #fff;
+  border: none;
+}
+
+.container {
+  height: 800px;
+}
+
+.intro {
+  padding: 0 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro h3 {
+  width: 320px;
+  text-align: center;
+}
+
+.intro p {
+  width: 500px;
+  text-align: center;
+}
+
+.intro li {
+  list-style: none;
+  margin-top: 50px;
+}
+
+.intro li a {
+  text-decoration: none;
+  padding: 12px 60px;
+  background-color: #fff;
+  color: purple;
+  width: 100px;
+  border: 1px solid purple;
+  border-radius: 50px;
+}
+
+.intro img {
+  width: 100px;
+  fill: purple;
+}
+
+.container-content {
+  padding: 0 30px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+  gap: 30px;
+  width: 700px;
+  height: 400px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.box1 {
+  height: 220px;
+  width: 300px;
+  padding: 30px 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.image.top {
+  margin-top: 140px;
+  gap: 130px;
+}
+
+.box1:hover {
+  color: #fff;
+  background-color: blueviolet;
+}
+
+.image article .label {
+  width: 400px;
+}
+
+.image article .text1,
+.image article .text2 {
+  width: 400px;
+}
+
+.image article .text2 {
+  margin-top: 20px;
+}
+
+.testimonies {
+  padding: 0 60px;
+  display: block;
+  justify-content: center;
+
+  align-items: center;
+  height: 500px;
+  width: 1100px;
+  position: relative;
+
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.testimonies .quote {
+  position: absolute;
+  left: -55px;
+  width: 100px;
+  color: #fff;
+}
+
+.testimonies-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 50px;
+  position: absolute;
+  top: 50px;
+  z-index: 2;
+}
+
+.testmony1 {
+  height: 270px;
+  width: 300px;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  /* border-top: 2px solid blueviolet; */
+}
+
+.testmony1.body {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.testmony1.body p {
+  color: gray;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.testmony1.body img {
+  display: flex;
+  width: 60px;
+  border-radius: 50px;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 18px;
+  margin-left: 100px;
+}
+
+.name {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  height: 300px;
+  width: 100%;
+  background-color: blueviolet;
+  padding: 50px 60px;
+}
+
+.footer-container {
+  background-color: blueviolet;
+
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+footer .footer1 p {
+  width: 300px;
+  color: #fff;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.footer1 {
+  color: gainsboro;
+}
+
+.footer2 {
+  color: gainsboro;
+}
+
+.footer2 ul li,
+.footer3 ul li {
+  list-style: none;
+}
+
+.footer2 ul li a,
+.footer3 ul li a {
+  text-decoration: none;
+  line-height: 35px;
+  color: gainsboro;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+
+.footer3 {
+  color: gainsboro;
+  margin-top: 20px;
+}
+
+.footer4 {
+  color: gainsboro;
+}
+
+.footer4 li {
+  list-style: none;
+  line-height: 35px;
+}
+
+.terms {
+  justify-content: end;
+  color: goldenrod;
+  text-decoration: none;
+  display: flex;
+  font-size: 16px;
+}
+@media screen and (max-width: 1024px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+    width: 992px;
+  }
+
+  header {
+    width: 992px;
+    padding: 0 20px;
+    height: 400px;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-links {
+    height: 400px;
+    background-color: blueviolet;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+    width: 992px;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    gap: 15px;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navigations ul li {
+    list-style: none;
+  }
+
+  .navigations ul li a {
+    text-decoration: none;
+  }
+
+  .image {
+    width: 992px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+
+  .image article .welcome {
+    font-size: 20px;
+  }
+
+  .image article p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    width: 450px;
+  }
+
+  .container {
+    width: 992px;
+  }
+
+  .intro {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 500px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .image.top {
+    width: 992px;
+    margin-top: 140px;
+    gap: 20px;
+  }
+
+  .image.top img {
+    background-color: red;
+  }
+
+  .box1:hover {
+    color: #fff;
+    background-color: blueviolet;
+  }
+
+  .image article .label {
+    width: 300px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    padding: 0 60px;
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    height: 700px;
+    width: 768px;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+
+  footer {
+    height: 430px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px 60px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  footer .footer1 p {
+    width: 150px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: gainsboro;
+  }
+
+  .footer2 {
+    color: gainsboro;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .footer3 {
+    color: gainsboro;
+    margin-top: 20px;
+  }
+
+  .footer4 {
+    color: gainsboro;
+  }
+
+  .footer4 li {
+    list-style: none;
+    line-height: 35px;
+  }
+
+  .terms {
+    justify-content: end;
+    color: goldenrod;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 25px;
+    width: 90px;
+    color: #fff;
+  }
+}
+@media screen and (max-width: 992px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+    width: 992px;
+  }
+
+  header {
+    width: 992px;
+    padding: 0 20px;
+    height: 400px;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-links {
+    height: 400px;
+    background-color: blueviolet;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+    width: 992px;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    position: absolute;
+    display: flex;
+    left: 10px;
+  }
+
+  nav ul {
+    gap: 15px;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navigations ul li {
+    list-style: none;
+  }
+
+  .navigations ul li a {
+    text-decoration: none;
+  }
+
+  .image {
+    width: 992px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 400px;
+    border-radius: 10px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
+
+  .image article .welcome {
+    font-size: 20px;
+  }
+
+  .image article p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    width: 450px;
+  }
+
+  .container {
+    width: 992px;
+  }
+
+  .intro {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 500px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .image.top {
+    width: 992px;
+    margin-top: 140px;
+    gap: 20px;
+  }
+
+  .image.top img {
+    background-color: red;
+  }
+
+  .box1:hover {
+    color: #fff;
+    background-color: blueviolet;
+  }
+
+  .image article .label {
+    width: 300px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    padding: 0 60px;
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    height: 700px;
+    width: 768px;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+
+  footer {
+    height: 430px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px 60px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  footer .footer1 p {
+    width: 150px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: gainsboro;
+  }
+
+  .footer2 {
+    color: gainsboro;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .footer3 {
+    color: gainsboro;
+    margin-top: 20px;
+  }
+
+  .footer4 {
+    color: gainsboro;
+  }
+
+  .footer4 li {
+    list-style: none;
+    line-height: 35px;
+  }
+
+  .terms {
+    justify-content: end;
+    color: goldenrod;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 25px;
+    width: 90px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+    width: 768px;
+  }
+
+  header {
+    width: 768px;
+    padding: 0 20px;
+    height: 400px;
+    position: relative;
+  }
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+
+  .close {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .nav-links {
+    height: 400px;
+    background-color: blueviolet;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    align-items: center;
+    display: none;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin-top: 30px;
+    width: 768px;
+    justify-content: space-evenly;
+  }
+
+  nav {
+    display: flex;
+  }
+
+  nav ul {
+    gap: 15px;
+    display: flex;
+  }
+
+  nav ul li {
+    list-style: none;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations {
+    display: flex;
+  }
+
+  .navigations ul {
+    display: flex;
+    gap: 20px;
+  }
+
+  .navigations ul li {
+    list-style: none;
+  }
+
+  .navigations ul li a {
+    text-decoration: none;
+  }
+
+  .image {
+    width: 768px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    height: 300px;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 350px;
+    border-radius: 10px;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+  }
+
+  .image article .welcome {
+    font-size: 20px;
+  }
+
+  .image article p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 40px;
+    width: 350px;
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  .intro {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 500px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .image.top {
+    width: 768px;
+    margin-top: 140px;
+    gap: 20px;
+  }
+
+  .image.top img {
+    background-color: red;
+  }
+
+  .box1:hover {
+    color: #fff;
+    background-color: blueviolet;
+  }
+
+  .image article .label {
+    width: 300px;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    margin-right: 100px;
+    width: 300px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    padding: 0 60px;
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    height: 700px;
+    width: 768px;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 50px;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    position: absolute;
+    top: 50px;
+    z-index: 2;
+  }
+
+  footer {
+    height: 430px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px 60px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  footer .footer1 p {
+    width: 150px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: gainsboro;
+  }
+
+  .footer2 {
+    color: gainsboro;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .footer3 {
+    color: gainsboro;
+    margin-top: 20px;
+  }
+
+  .footer4 {
+    color: gainsboro;
+  }
+
+  .footer4 li {
+    list-style: none;
+    line-height: 35px;
+  }
+
+  .terms {
+    justify-content: end;
+    color: goldenrod;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 20px;
+    margin-right: 50px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 25px;
+    width: 90px;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    display: flex;
+    right: -300px;
+    transition: 0.2s linear;
+    margin-right: 100px;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 150px;
+    border: none;
+  }
+
+  header {
+    width: 568px;
+    padding: 0 10px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 414px;
+    margin-top: 30px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  .image {
+    display: grid;
+    width: 330px;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 305px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 330px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image article .welcome {
+    font-size: 15px;
+  }
+
+  .image article p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .reg {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .reg li {
+    list-style: none;
+  }
+
+  .reg li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .reg li a:hover {
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+  }
+
+  .container {
+    height: 1500px;
+    width: 568px;
+    margin: 0 auto;
+    display: grid;
+  }
+
+  .intro {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    margin: 0 auto;
+    margin-left: 50px;
+    margin-top: 40px;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 300px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .intro img {
+    width: 100px;
+    fill: purple;
+  }
+
+  .container-content {
+    padding: 0 30px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 30px;
+    width: 568px;
+    height: 900px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: -70px;
+  }
+
+  .box1 {
+    height: 220px;
+    width: 305px;
+    padding: 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image.top {
+    margin-top: 60px;
+    gap: 10px;
+    margin-left: -180px;
+  }
+
+  .image.top img {
+  }
+
+  .image article .label {
+    width: 300px;
+    text-align: center;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    width: 300px;
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    padding: 0 60px;
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    height: 1100px;
+    width: 568px;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-left: -40px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 60px;
+    width: 50px;
+    color: #fff;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    height: 1000px;
+    left: 100px;
+  }
+
+  .testmony1 {
+    display: grid;
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /* border-top: 2px solid blueviolet; */
+  }
+
+  .testmony1.body {
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .testmony1.body:hover {
+    background-color: rgb(188, 126, 243);
+    color: #fff;
+  }
+
+  .testmony1.body p {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .testmony1.body img {
+    display: flex;
+    width: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-left: 80px;
+  }
+
+  .name {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  footer {
+    height: 1100px;
+    width: 568px;
+    background-color: blueviolet;
+    padding: 50px 60px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: grid;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  footer .footer1 p {
+    width: 300px;
+    color: #fff;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: #fff;
+  }
+
+  .footer2 {
+    color: #fff;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .nav-links.nav {
+    position: absolute;
+    right: 0;
+    transition: 0.2s linear;
+  }
+
+  .icon {
+    background-color: #fff;
+    font-size: 25px;
+    color: blueviolet;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+  }
+
+  .nav-links {
+    position: absolute;
+    display: flex;
+    right: -400px;
+    transition: 0.2s linear;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 50px;
+    border: none;
+  }
+
+  header {
+    width: 414px;
+    padding: 0 10px;
+  }
+
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 414px;
+    margin-top: 30px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  .image {
+    display: grid;
+    width: 330px;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 305px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 440px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .works {
+    width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-right: 400px;
+  }
+
+  .image article .welcome {
+    font-size: 15px;
+  }
+
+  .image article p {
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .reg {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .reg li {
+    list-style: none;
+  }
+
+  .reg li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .reg li a:hover {
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+  }
+
+  .container {
+    height: 1500px;
+    width: 375px;
+  }
+
+  .intro {
+    padding: 0 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: 0 auto;
+    margin-left: -1px;
+    margin-top: 40px;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 300px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .intro img {
+    width: 100px;
+    fill: purple;
+  }
+
+  .container-content {
+    padding: 0 30px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 30px;
+    width: 414px;
+    height: 900px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: -1px;
+  }
+
+  .box1 {
+    height: 220px;
+    width: 305px;
+    padding: 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: grid;
+    margin: 0 auto;
+    margin-right: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image.top {
+    margin-top: 60px;
+    gap: 10px;
+    margin-left: -200px;
+  }
+
+  .image.top img {
+    margin-left: 60px;
+  }
+
+  .image article .label {
+    width: 300px;
+    text-align: center;
+    margin-left: 60px;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    width: 300px;
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    padding: 0 60px;
+    display: block;
+    justify-content: center;
+
+    align-items: center;
+    height: 1100px;
+    width: 375px;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-left: 10px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 40px;
+    width: 50px;
+    color: #fff;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    height: 1000px;
+    left: 30px;
+  }
+
+  .testmony1 {
+    display: grid;
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /* border-top: 2px solid blueviolet; */
+  }
+
+  .testmony1.body {
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .testmony1.body:hover {
+    background-color: rgb(188, 126, 243);
+    color: #fff;
+  }
+
+  .testmony1.body p {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .testmony1.body img {
+    display: flex;
+    width: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 18px;
+    margin-left: 80px;
+  }
+
+  .name {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  footer {
+    display: block;
+    height: 1200px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: grid;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  footer .footer1 p {
+    width: 300px;
+    color: gainsboro;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: gainsboro;
+  }
+
+  .footer2 {
+    color: gainsboro;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .footer4 {
+    color: gainsboro;
+  }
+
+  .nav-links.nav {
+    position: absolute;
+    left: 50px;
+    transition: 0.2s linear;
+  }
+
+  .icon {
+    background-color: #fff;
+    font-size: 25px;
+    color: blueviolet;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body,
+  html {
+    width: auto !important;
+    overflow-x: hidden !important;
+    width: 375px;
+  }
+
+  .nav-links {
+    position: absolute;
+    display: flex;
+    right: -500px;
+    transition: 0.5s linear;
+  }
+
+  .menu {
+    display: flex;
+    margin-right: 50px;
+    border: none;
+  }
+
+  header {
+    width: 350px;
+    padding: 0 10px;
+  }
+  .icon.close {
+    border: none;
+    background-color: blueviolet;
+    color: #fff;
+  }
+  .header-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 30px;
+  }
+
+  .logo {
+    display: flex;
+    gap: 10px;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .navigations {
+    display: none;
+  }
+
+  .image {
+    display: flex;
+    width: 3px;
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image img {
+    background-color: blueviolet;
+    width: 305px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image article .welcome {
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .image article p {
+    text-align: center;
+    color: gray;
+    font-size: 15px;
+  }
+
+  .image article h2 {
+    margin-top: 20px;
+    font-size: 30px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .reg {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .reg li {
+    list-style: none;
+  }
+
+  .reg li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .reg li a:hover {
+    background-color: blueviolet;
+    color: #fff;
+    border: none;
+  }
+
+  .container {
+    flex-direction: column;
+    height: 1500px;
+    width: 375px;
+    margin: 0 auto;
+  }
+
+  .intro {
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 375px;
+    margin: 0 auto;
+    margin-left: -5px;
+    margin-top: 20px;
+  }
+
+  .intro h3 {
+    width: 320px;
+    text-align: center;
+  }
+
+  .intro p {
+    width: 300px;
+    text-align: center;
+  }
+
+  .intro li {
+    list-style: none;
+    margin-top: 50px;
+  }
+
+  .intro li a {
+    text-decoration: none;
+    padding: 12px 60px;
+    background-color: #fff;
+    color: purple;
+    width: 100px;
+    border: 1px solid purple;
+    border-radius: 50px;
+  }
+
+  .intro img {
+    width: 100px;
+    fill: purple;
+  }
+
+  .container-content {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+    gap: 30px;
+    width: 375px;
+    height: 900px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-left: -5px;
+  }
+
+  .box1 {
+    height: 200px;
+    width: 290px;
+    padding: 30px 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    display: grid;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image.top {
+    width: 375px;
+    margin-top: 10px;
+    gap: 10px;
+    margin-left: -30px;
+  }
+
+  .image.top img {
+    margin-left: 60px;
+  }
+
+  .image article .label {
+    width: 300px;
+    text-align: center;
+  }
+
+  .image article .text1,
+  .image article .text2 {
+    width: 280px;
+    text-align: center;
+
+    margin-top: 20px;
+  }
+
+  .image article .text2 {
+    margin-top: 20px;
+  }
+
+  .testimonies {
+    display: block;
+
+    justify-content: center;
+
+    align-items: center;
+    height: 1100px;
+    width: 100%;
+    position: relative;
+
+    margin: 0 auto;
+    margin-top: 150px;
+    /* margin-right: -5px; */
+    margin-left: 15px;
+  }
+
+  .testimonies .quote {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    color: gainsboro;
+  }
+
+  .testimonies-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+
+    position: absolute;
+    top: 30px;
+    z-index: 2;
+    height: 1000px;
+  }
+
+  .testmony1 {
+    display: grid;
+    height: 270px;
+    width: 270px;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /* border-top: 2px solid blueviolet; */
+  }
+
+  .testmony1.body {
+    background-color: #fff;
+    cursor: pointer;
+  }
+
+  .testmony1.body:hover {
+    background-color: rgb(188, 126, 243);
+    color: gainsboro;
+  }
+
+  .testmony1.body p {
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 20px;
+  }
+
+  .testmony1.body img {
+    display: flex;
+    width: 60px;
+    border-radius: 50px;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 18px;
+  }
+
+  .name {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  footer {
+    height: 900px;
+    width: 100%;
+    background-color: blueviolet;
+    padding: 50px 60px;
+  }
+
+  .footer-container {
+    background-color: blueviolet;
+
+    display: grid;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  footer .footer1 p {
+    width: 300px;
+    color: gainsboro;
+    line-height: 25px;
+    letter-spacing: 1px;
+  }
+
+  .footer1 {
+    color: gainsboro;
+  }
+
+  .footer2 {
+    color: gainsboro;
+  }
+
+  .footer2 ul li,
+  .footer3 ul li {
+    list-style: none;
+  }
+
+  .footer2 ul li a,
+  .footer3 ul li a {
+    text-decoration: none;
+    line-height: 35px;
+    color: gainsboro;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  .nav-links.nav {
+    position: absolute;
+    left: 70px;
+    transition: 0.2s linear;
+  }
+
+  .icon {
+    background-color: #fff;
+    font-size: 25px;
+    color: blueviolet;
+    border: none;
+    outline: none;
+  }
+
+  .footer4 {
+    color: gainsboro;
+  }
+}
