@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 700px;
+}
+
+.banka {
+    margin: 0 auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.banka h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 35px;
+    margin-top: 20px;
+}
+
+.banka p {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+}
+
+img {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.form-step {
+    margin: 0 auto;
+    width: 400px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 20px;
+    height: 250px;
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.form-controller {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.btn {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.next-btn {
+    padding: 10px;
+    width: 100px;
+    background-color: blueviolet;
+    border: none;
+    color: gainsboro;
+}
+
+small {
+    float: right;
+    margin-top: 10px;
+    color: red;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+
+.form-controller.success input {
+    border: 1px solid green;
+}
+
+
+.form-controller.error input {
+    border: 1px solid red;
+}
+
+.form-controller.success small {
+    color: green;
+    visibility: visible;
+}
+
+.form-controller.error small {
+    color: red;
+    visibility: visible;
+}
+
+@media screen and (max-width:768px) {
+    body {
+        height: 700px;
+    }
+
+    .banka {
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banka h1 {
+        text-align: center;
+        color: blueviolet;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .form-step {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        height: 250px;
+    }
+}
+
+
+@media screen and (max-width:568px) {
+    body {
+        height: 1200px;
+    }
+
+    .banka {
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banka h1 {
+        text-align: center;
+        color: blueviolet;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .form-step {
+        margin: 0 auto;
+        width: 400px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:414px) {
+    body {
+        height: 1200px;
+    }
+
+    .banka {
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banka h1 {
+        text-align: center;
+        color: blueviolet;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .form-step {
+        margin: 0 auto;
+        width: 350px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        height: 800px;
+    }
+
+    .banka {
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banka h1 {
+        text-align: center;
+        color: blueviolet;
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    img {
+        width: 100px;
+        margin: 0 auto;
+    }
+
+    .form-step {
+        margin: 0 auto;
+        width: 300px;
+        margin-top: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        height: 250px;
+    }
+}

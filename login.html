@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="login.css" />
+    <title>Login || Banka</title>
+  </head>
+  <body>
+    <main class="container">
+      <h2>Banka</h2>
+      <div class="img">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Voluptatibus, voluptatum!
+        </p>
+        <img src="./images/banka-logo (1).jpg" alt="" />
+      </div>
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <input
+            type="email"
+            placeholder="Email"
+            id="email"
+            oninvalid="checkInputs(this)"
+            oninput="checkInputs(this)"
+          />
+          <ion-icon
+            class="icon green"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <ion-icon class="icon red" name="alert-circle-outline"></ion-icon>
+          <small>Error</small>
+        </div>
+        <div class="form-control">
+          <input type="password" placeholder="Password" id="password" />
+          <ion-icon
+            class="icon green"
+            name="checkmark-circle-outline"
+          ></ion-icon>
+          <ion-icon class="icon red" name="alert-circle-outline"></ion-icon>
+          <small>Error</small>
+        </div>
+        <button type="submit" class="btn">Sign in</button>
+        <div class="forgot">
+          <ul>
+            <li><a href="">Forgot Password</a></li>
+            <li>Dont have an accoount <a href="register.html">Sign Up</a></li>
+          </ul>
+        </div>
+      </form>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script src="./validate.js"></script>
+  </body>
+</html>

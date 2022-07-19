@@ -1,0 +1,400 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+height: 800px;
+}
+.banka{
+    display: grid;
+    justify-content:center ;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.banka p{
+ text-align: center;
+ width: 400px;
+}
+.banka h1{
+    text-align: center;
+    color: blueviolet;
+}
+.banka img{
+width: 100px;
+margin: 0 auto;
+
+}
+.container{
+
+height: 800px;
+justify-content: center;
+align-items: center;
+}
+.form{
+}
+.form-step{
+    height: 300px;
+    width: 400px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 20px;
+    transform-origin: top;
+    animation: animate 0.5s;
+display: none;
+}
+.form-controller{
+    padding: 10px;
+}
+
+.form-active{
+    display: block;
+    padding: 20px 20px;
+    height: 300px;
+    width: 400px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+small{
+    float: right;
+    margin-top: 10px;
+    color: red;
+    letter-spacing: 1px;
+    visibility: hidden;
+}
+@keyframes animate {
+    from {
+        transform: scale(1, 0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+.btn.single{
+    margin-left: 250px;
+    margin-top: 40px;
+}
+.next-btn{
+    background-color: blueviolet;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    margin-top: 18px;
+    
+}
+.prev-btn{
+background-color: blueviolet;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    margin-top: 18px;
+    
+}
+.text{
+    text-align: center;
+    color:blueviolet;
+}
+.progressbar::before,.progress{
+    content:"";
+    position: absolute;
+    top: 50%;
+    height: 4px;
+    transform: translateY(-50%);
+    width: 100%;
+    background-color: #ddd;
+}
+.progress{
+    background-color: blueviolet;
+    width: 0%;
+    transition: .3s;
+}
+.progressbar{
+    width: 400px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin:20px auto ;
+    counter-reset: step;
+
+                
+}
+.progress-step{
+height: 40px;
+width: 40px;
+border-radius: 50px;
+background-color: #ddd;
+display: flex;
+align-items: center;
+justify-content: center;
+z-index: 1;
+}
+.progress-step::before{
+counter-increment: step;
+content: counter(step);
+}
+.progress-step-active{
+    background-color: blueviolet;
+    color: #fff;
+}
+input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    margin-top: 7px;
+}
+select{
+    margin-top: 7px;
+    display: block;
+        width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 0.25rem;
+        
+}
+.form-controller.success input {
+    border: 1px solid green;
+}
+.form-controller.error input{
+    border: 1px solid red;
+}
+.form-controller.success small{
+    visibility: visible;
+    color: green;
+}
+.form-controller.error small {
+    visibility: visible;
+    color: red;
+}
+.label{
+    margin-bottom: 30px;
+}
+.submit{
+background-color: blueviolet;
+    padding: 10px;
+    width: 100px;
+    border: none;
+    color: #fff;
+    margin-top: 15px;
+}
+
+
+@media screen and (max-width:568px) {
+    body {
+        width: 568px;
+        overflow-x: hidden;
+    }
+
+    .banka {
+        width: 568px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 330px;
+    }
+
+    .banka img {
+        width: 80px;
+        margin: 0 auto;
+
+    }
+
+    .progressbar {
+
+        width: 390px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+        counter-reset: step;
+
+
+    }
+
+    .form-step {
+        height: 300px;
+        width: 420px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        transform-origin: top;
+        animation: animate 0.5s;
+        display: none;
+    }
+
+    .form-active {
+        display: block;
+        padding: 20px 20px;
+        height: 300px;
+        width: 420px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn.single {
+        margin-left: 270px;
+    }
+}
+
+
+
+
+@media screen and (max-width:414px) {
+    body {
+        width: 414px;
+    }
+
+    .banka {
+        width: 414px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+
+    .banka p {
+        text-align: center;
+        width: 330px;
+    }
+
+    .banka img {
+        width: 80px;
+        margin: 0 auto;
+
+    }
+
+    .progressbar {
+
+        width: 360px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        margin: 20px auto;
+        counter-reset: step;
+
+
+    }
+
+    .form-step {
+        height: 300px;
+        width: 360px;
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+        padding: 20px 20px;
+        transform-origin: top;
+        animation: animate 0.5s;
+        display: none;
+    }
+
+    .form-active {
+        display: block;
+        padding: 20px 20px;
+        height: 300px;
+        width: 360px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .container {
+
+        height: 900px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn.single {
+        margin-left: 230px;
+    }
+}
+
+
+@media screen and (max-width:375px){
+    body{
+        width:375px;
+    }
+.banka {
+    width: 375px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+.banka p {
+    text-align: center;
+    width: 300px;
+}
+.banka img {
+    width: 80px;
+    margin: 0 auto;
+
+}
+.progressbar {
+    
+    width: 300px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    counter-reset: step;
+
+
+}
+.form-step {
+    height: 300px;
+    width: 300px;
+    background-color: #fff;
+    margin: 0 auto;
+    margin-top: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    padding: 20px 20px;
+    transform-origin: top;
+    animation: animate 0.5s;
+    display: none;
+}
+.form-active {
+    display: block;
+    padding: 20px 20px;
+    height: 300px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+.container {
+
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+.btn.single {
+    margin-left: 200px;
+}
+}

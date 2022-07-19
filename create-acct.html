@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="create-acct.css">
+    <title>Create Banka || Account</title>
+</head>
+<body>
+    <main>
+        <div class="banka">
+            <h1>Banka</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptates vitae omnis!</p>
+            <img src="./images/banka-logo (1).jpg" alt="">
+        </div>
+        <section class="container">
+            <div class="progressbar">
+                <div class="progress" id="progress"></div>
+                <div class="progress-step progress-step-active"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+                <div class="progress-step"></div>
+            </div>
+            <form action="" class="form" id="form">
+                <div class="form-step form-active">
+                    <div class="form-controller">
+                        <label for="first-name">First Name</label>
+                        <input type="text" name="firstName" id="first-name">
+                        <small>First Name requried</small>
+                    </div>
+                    <div class="form-controller">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" name="lastName" id="last-name">
+                        <small>Last Name requried</small>
+                    </div>
+                    <div class="btn single">
+
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                    
+                </div>
+                <div class="form-step">
+                    <div class="form-controller">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" oninvalid="checkInputs(this)"  oninput="checkInputs(this)">
+                        <small>Email requried</small>
+                    </div>
+                    <div class="form-controller">
+                        <label for="phone-no">Phone Number</label>
+                        <input type="number" name="phoneNumber" id="phone-number">
+                        <small>Phone Number requried</small>
+                    </div>
+                    <div class="btn">
+
+                        <button type="button" class="prev-btn">Previous</button>
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <div class="form-controller">
+                        <label for="Dob">Date of Birth</label>
+                        <input type="date" name="DOB" id="DOB">
+                        <small>Date of birth required</small>
+                    </div>
+                    <div class="form-controller">
+                        <label class="label" for="phone-no">Gender</label>
+                        <select name="gender" id="gender">
+                            <option value="male">male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <small>Gender required</small>
+                    </div>
+                    <div class="btn">
+                
+                        <button class="prev-btn">Previous</button>
+                        <button class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <div class="form-controller">
+                        <label for="stateOfOrigin">State Of origin</label>
+                        <input type="text" name="stateOfOrigin" id="state">
+                        <small>State of orgin requried</small>
+                    </div>
+                    <div class="form-controller">
+                        <label for="phone-no">City</label>
+                        <input type="text" name="city" id="city">
+                        <small>City required</small>
+                    </div>
+                    <div class="btn">
+                
+                        <button type="button" class="prev-btn">Previous</button>
+                        <button type="button" class="next-btn">Next</button>
+                    </div>
+                </div>
+                <div class="form-step">
+                    <div class="form-controller">
+                        <label for="email">Residential Address</label>
+                        <input type="text" name="address" id="address">
+                        <small>Address required</small>
+                    </div>
+                    <div class="form-controller ">
+                        <label class="label" for="phone-no">Account Type</label>
+                        <select name="accountType" id="account-type">
+                            <option value="Savings">Savings</option>
+                            <option value="Current">Current</option>
+                        </select>
+                        <small>Account Type required</small>
+                    </div>
+                    <div class="btn">
+                
+                        <button type="button" class="prev-btn">Previous</button>
+                        <button type="submit" class="submit">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
