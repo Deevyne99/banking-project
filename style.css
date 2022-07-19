@@ -1505,7 +1505,7 @@ footer .footer1 p {
   .image article .text2 {
     width: 300px;
     text-align: center;
-
+    margin-left: 70px;
     margin-top: 20px;
   }
 
@@ -1774,7 +1774,7 @@ footer .footer1 p {
 
   .container {
     height: 1500px;
-    width: 375px;
+    width: 414px;
   }
 
   .intro {
@@ -1830,11 +1830,11 @@ footer .footer1 p {
     height: 900px;
     margin-top: 40px;
     margin-bottom: 50px;
-    margin-left: -1px;
+    margin-left: 12px;
   }
 
   .box1 {
-    height: 220px;
+    height: 240px;
     width: 305px;
     padding: 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
