@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="activate.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="banka">
+      <h1>Banka</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+        voluptates vitae omnis!
+      </p>
+      <img src="./images/banka-logo (1).jpg" alt="" />
+    </div>
+    <form action="" id="form">
+      <div class="form-step">
+        <div class="form-controller">
+          <label for="email">Please Enter your Email Address</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            oninvalid="checkInputs(this)"
+            oninput="checkInputs(this)"
+          />
+          <small>Email requried</small>
+        </div>
+        <div class="btn">
+          <button type="submit" class="next-btn">Submit</button>
+        </div>
+      </div>
+    </form>
+    <script src="./forgot.js"></script>
+  </body>
+</html>

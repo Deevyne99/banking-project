@@ -1,45 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="reset.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="deposit.css" />
     <title>Document</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <div class="banka">
-        <h1>Banka</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis voluptates vitae omnis!</p>
-        <img src="./images/banka-logo (1).jpg" alt="">
+      <h1>Banka</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+        voluptates vitae omnis!
+      </p>
+      <img src="./images/banka-logo (1).jpg" alt="" />
     </div>
-    <form action="">
-        <div class="form-step">
-            <div class="form-controller">
-                <label for="email">Account Number</label>
-                <input type="number" name="email" id="email" oninvalid="checkInputs(this)" oninput="checkInputs(this)">
-                <small>Email requried</small>
-            </div>
-            <div class="form-controller">
-                <label for="phone-no">Account Name</label>
-                <input type="text" name="phoneNumber" id="phone-number">
-                <small>Phone Number requried</small>
-            </div>
-            <div class="form-controller">
-                <label for="phone-no">Amount</label>
-                <input type="number" name="phoneNumber" id="phone-number">
-                <small>Phone Number requried</small>
-            </div>
-            <div class="btn">
-
-
-                <button type="button" class="next-btn">Submit</button>
-            </div>
+    <form action="" id="form">
+      <div class="form-step">
+        <div class="form-controller">
+          <label for="email">Account Number</label>
+          <input type="number" name="accountNumber" id="account-number" />
+          <small>Email requried</small>
         </div>
+        <div class="form-controller">
+          <label for="phone-no">Account Name</label>
+          <input type="text" name="accountName" id="account-name" />
+          <small>Phone Number requried</small>
+        </div>
+        <div class="form-controller">
+          <label for="phone-no">Amount</label>
+          <input
+            type="number"
+            name="amount"
+            id="amount"
+            step="any"
+            placeholder="example 20000.00"
+          />
+          <small>Phone Number requried</small>
+        </div>
+        <div class="form-controller">
+          <label for="phone-no">Cashier Id</label>
+          <input type="number" name="cashierId" id="cashier-id" />
+          <small>Phone Number requried</small>
+        </div>
+        <div class="btn">
+          <button type="submit" class="next-btn">Submit</button>
+        </div>
+      </div>
     </form>
-</body>
-
+    <script src="./transactionVal.js"></script>
+  </body>
 </html>
