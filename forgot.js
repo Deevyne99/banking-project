@@ -1,17 +1,13 @@
-const form = document.getElementById('form')
 const email = document.getElementById('email')
-const password = document.getElementById('password')
+const from = document.getElementById('form')
 
 form.addEventListener('submit', (e) => {
   e.preventDefault()
-
   checkInputs()
 })
 
-function checkInputs() {
+const checkInputs = () => {
   const emailValue = email.value.trim()
-  const passwordValue = password.value.trim()
-
   if (emailValue === '') {
     setError(email, 'email cannot be empty')
   } else if (ValidateEmail(email)) {
@@ -21,12 +17,6 @@ function checkInputs() {
     email.setCustomValidity('email.@example/com')
     setError(email, 'looks like this is not a valid email')
   }
-
-  if (passwordValue === '') {
-    setError(password, 'Password cannot be empty')
-  } else {
-    setSuccess(password, 'success')
-  }
 }
 
 function setError(input, message) {
@@ -35,13 +25,13 @@ function setError(input, message) {
   // add error message inside small
   small.innerText = message
 
-  formControl.className = 'form-control error'
+  formControl.className = 'form-controller error'
 }
 function setSuccess(input, message) {
   const formControl = input.parentElement
   const small = formControl.querySelector('small')
   small.innerText = message
-  formControl.className = 'form-control success'
+  formControl.className = 'form-controller success'
 }
 
 function ValidateEmail(mail) {

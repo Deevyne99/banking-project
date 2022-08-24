@@ -1045,9 +1045,16 @@ footer .footer1 p {
     width: 768px;
     justify-content: space-evenly;
   }
+  .logo {
+    display: flex;
+    position: absolute;
+    left: 20px;
+  }
 
   nav {
     display: flex;
+    position: absolute;
+    left: 300px;
   }
 
   nav ul {
@@ -1064,6 +1071,8 @@ footer .footer1 p {
   }
 
   .navigations {
+    position: absolute;
+    left: 600px;
     display: flex;
   }
 
@@ -2085,6 +2094,7 @@ footer .footer1 p {
 
   .image article .welcome {
     font-size: 15px;
+    display: none;
     text-align: center;
   }
 
@@ -2095,7 +2105,7 @@ footer .footer1 p {
   }
 
   .image article h2 {
-    margin-top: 20px;
+    margin-top: 40px;
     font-size: 30px;
     width: 300px;
     text-align: center;
@@ -2190,7 +2200,7 @@ footer .footer1 p {
   }
 
   .box1 {
-    height: 200px;
+    height: 210px;
     width: 290px;
     padding: 30px 30px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
